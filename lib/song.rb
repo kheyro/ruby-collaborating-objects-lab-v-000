@@ -12,7 +12,4 @@ class Song
     new_song.artist.name = file[0]
   end
 
-  def name=(name)
-    @name = name
-  end
 end
