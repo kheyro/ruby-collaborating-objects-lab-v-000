@@ -7,7 +7,6 @@ class MP3Importer
 
   def files
     @files = Dir.glob("#{self.path}/*.mp3").map { |file| File.basename(file) }
-    @files
   end
 
   def import
