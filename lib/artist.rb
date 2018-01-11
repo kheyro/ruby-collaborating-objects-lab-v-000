@@ -28,7 +28,4 @@ class Artist
     self.songs.each { |song| puts "#{song.name}" }
   end
 
-  def name=(name)
-    @name = name
-  end
 end
