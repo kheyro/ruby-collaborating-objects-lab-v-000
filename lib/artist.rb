@@ -13,8 +13,10 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    artist = self.new(name) unless self.all.detect { |artist| artist.name == name }
-    @@all << artist
+    if !(self.all.detect { |artist| artist.name == name })
+      artist = self.new(name)
+      @@all << artist
+    end
   end
 
   def save
