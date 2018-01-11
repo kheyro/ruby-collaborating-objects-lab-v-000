@@ -7,7 +7,7 @@ class Song
   end
 
   def artist=(name)
-    if Song.artist == nil 
+    if Song.artist == nil
       Song.artist = Artist.new(name)
     else
       Song.artist = name
