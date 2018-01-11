@@ -10,6 +10,6 @@ class Song
     file = filename.split(" - ")
     new_song = self.new(file[1])
     new_artist = Artist.new(new_song)
-    new_song.artist.name = file[0]
+    new_artist.name = file[0]
   end
 end
