@@ -12,10 +12,7 @@ class Artist
     self.songs << song
   end
 
-  def self.all
+  def self.save
     @@all << self
-  end
-
-  def save
   end
 end
