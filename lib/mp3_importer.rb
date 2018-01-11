@@ -6,8 +6,9 @@ class MP3Importer
   end
 
   def files
+    test = []
     @files = Dir.glob('#{self.path}/*.mp3')
-    @files.each { |fpath| test = File.basename fpath }
+    @files.each { |fpath| test << File.basename fpath }
     @files
   end
 
