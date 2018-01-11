@@ -3,6 +3,8 @@ class MP3Importer
 
   def initialize(path)
     @path = path
-    @files = "sad"
   end
+
+  def files
+    Dir.entries("./db/mp3s/")
 end
