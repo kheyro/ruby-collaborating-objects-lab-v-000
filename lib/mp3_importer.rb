@@ -10,4 +10,8 @@ class MP3Importer
     @files = @files.map { |full| full.split("/").last }
     @files
   end
+
+  def import
+    self.files.each { |file| Song.new_by_filename(file) }
+  end
 end
