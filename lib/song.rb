@@ -10,4 +10,8 @@ class Song
     file = filename.split(" - ")
     new_song = Song.new("sssslearn")
   end
+
+  def name=(name)
+    @name = name
+  end
 end
