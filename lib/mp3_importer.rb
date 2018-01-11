@@ -3,6 +3,6 @@ class MP3Importer
 
   def initialize(path)
     @path = path
-    @files = "ds"
+    @files = "sad"
   end
 end
